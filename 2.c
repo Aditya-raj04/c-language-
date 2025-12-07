@@ -1,6 +1,4 @@
-#include <stdio.h>
 
-int main() {
     // short int a = -3;
     // signed short int b = 15000;
 
@@ -49,15 +47,47 @@ int main() {
 // printf("Sum of 8 times table is: %d\n", sum);
 
 // factorial of a number
-int product = 1;
-for (int i = 1; i <= 0; i++)
-{
-    product *= i;
+// int product = 1;
+// for (int i = 1; i <= 0; i++)
+// {
+//     product *= i;
 
         // printf("Intermediate product after multipl/ying %d is: %d\n", i, product);
-}
-printf("Sum is: %d\n", product);
+// }
+// printf("Sum is: %d\n", product);
 
+
+//using while loop factorial
+// int n = 0;
+// int product = 1;
+// int i = 1;
+// while(i<=n)
+//     {
+//         product *= i;
+//         i++;
+       
+//     }
+//     printf("Factorial of %d is: %d\n", n, product);
+
+
+#include <stdio.h>
+
+int main() {
+int n = 20;
+int prime = 0;
+for(int i = 2; i<n; i++){
+if(n%i==0){
+    prime = 1;
+}
+if (prime)
+{
+printf("is prime%d\n", i);
+}
+    else{
+        printf("not a prime%d\n", i);
+    }
+}
 
     return 0;
 }
+
